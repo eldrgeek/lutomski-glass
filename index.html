@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lutomski Stained Glass — Denver, CO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">Lutomski <span>Stained Glass</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#commission">Commission</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-glass-wrap" aria-hidden="true">
+      <svg class="rose-window" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer ring petals -->
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-soft">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <radialGradient id="ruby" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff6b6b"/>
+            <stop offset="100%" stop-color="#8b0000"/>
+          </radialGradient>
+          <radialGradient id="sapphire" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#4fc3f7"/>
+            <stop offset="100%" stop-color="#0d2b6e"/>
+          </radialGradient>
+          <radialGradient id="emerald" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#80cbc4"/>
+            <stop offset="100%" stop-color="#1a4a3a"/>
+          </radialGradient>
+          <radialGradient id="amber" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe082"/>
+            <stop offset="100%" stop-color="#e65100"/>
+          </radialGradient>
+          <radialGradient id="violet" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ce93d8"/>
+            <stop offset="100%" stop-color="#4a0072"/>
+          </radialGradient>
+          <radialGradient id="gold" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff176"/>
+            <stop offset="100%" stop-color="#f9a825"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Outer circle border -->
+        <circle cx="300" cy="300" r="278" fill="none" stroke="#1a0a00" stroke-width="8"/>
+        <circle cx="300" cy="300" r="270" fill="none" stroke="#3d2200" stroke-width="3"/>
+
+        <!-- 12 outer petal segments -->
+        <path d="M300,300 L300,30 A270,270 0 0,1 434.7,76.3 Z" fill="url(#ruby)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L434.7,76.3 A270,270 0 0,1 540,187.7 Z" fill="url(#sapphire)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L540,187.7 A270,270 0 0,1 570,300 Z" fill="url(#emerald)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L570,300 A270,270 0 0,1 540,412.3 Z" fill="url(#amber)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L540,412.3 A270,270 0 0,1 434.7,523.7 Z" fill="url(#violet)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L434.7,523.7 A270,270 0 0,1 300,570 Z" fill="url(#ruby)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L300,570 A270,270 0 0,1 165.3,523.7 Z" fill="url(#sapphire)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L165.3,523.7 A270,270 0 0,1 60,412.3 Z" fill="url(#emerald)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L60,412.3 A270,270 0 0,1 30,300 Z" fill="url(#amber)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L30,300 A270,270 0 0,1 60,187.7 Z" fill="url(#violet)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L60,187.7 A270,270 0 0,1 165.3,76.3 Z" fill="url(#gold)" filter="url(#glow)" opacity="0.9"/>
+        <path d="M300,300 L165.3,76.3 A270,270 0 0,1 300,30 Z" fill="url(#emerald)" filter="url(#glow)" opacity="0.9"/>
+
+        <!-- Lead lines for outer segments -->
+        <line x1="300" y1="300" x2="300" y2="30" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="434.7" y2="76.3" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="540" y2="187.7" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="570" y2="300" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="540" y2="412.3" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="434.7" y2="523.7" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="300" y2="570" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="165.3" y2="523.7" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="60" y2="412.3" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="30" y2="300" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="60" y2="187.7" stroke="#1a0a00" stroke-width="4"/>
+        <line x1="300" y1="300" x2="165.3" y2="76.3" stroke="#1a0a00" stroke-width="4"/>
+
+        <!-- Middle ring -->
+        <circle cx="300" cy="300" r="170" fill="none" stroke="#1a0a00" stroke-width="5"/>
+
+        <!-- 6 middle ring petals -->
+        <path d="M300,300 L300,130 A170,170 0 0,1 447.3,215 Z" fill="url(#gold)" opacity="0.85"/>
+        <path d="M300,300 L447.3,215 A170,170 0 0,1 447.3,385 Z" fill="url(#ruby)" opacity="0.85"/>
+        <path d="M300,300 L447.3,385 A170,170 0 0,1 300,470 Z" fill="url(#sapphire)" opacity="0.85"/>
+        <path d="M300,300 L300,470 A170,170 0 0,1 152.7,385 Z" fill="url(#emerald)" opacity="0.85"/>
+        <path d="M300,300 L152.7,385 A170,270 0 0,1 152.7,215 Z" fill="url(#amber)" opacity="0.85"/>
+        <path d="M300,300 L152.7,215 A170,170 0 0,1 300,130 Z" fill="url(#violet)" opacity="0.85"/>
+
+        <!-- Lead lines for middle ring -->
+        <line x1="300" y1="300" x2="300" y2="130" stroke="#1a0a00" stroke-width="3.5"/>
+        <line x1="300" y1="300" x2="447.3" y2="215" stroke="#1a0a00" stroke-width="3.5"/>
+        <line x1="300" y1="300" x2="447.3" y2="385" stroke="#1a0a00" stroke-width="3.5"/>
+        <line x1="300" y1="300" x2="300" y2="470" stroke="#1a0a00" stroke-width="3.5"/>
+        <line x1="300" y1="300" x2="152.7" y2="385" stroke="#1a0a00" stroke-width="3.5"/>
+        <line x1="300" y1="300" x2="152.7" y2="215" stroke="#1a0a00" stroke-width="3.5"/>
+
+        <!-- Inner circle -->
+        <circle cx="300" cy="300" r="90" fill="none" stroke="#1a0a00" stroke-width="5"/>
+
+        <!-- Inner 6 petals -->
+        <path d="M300,300 L300,210 A90,90 0 0,1 377.9,255 Z" fill="url(#ruby)" filter="url(#glow-soft)" opacity="0.95"/>
+        <path d="M300,300 L377.9,255 A90,90 0 0,1 377.9,345 Z" fill="url(#amber)" filter="url(#glow-soft)" opacity="0.95"/>
+        <path d="M300,300 L377.9,345 A90,90 0 0,1 300,390 Z" fill="url(#emerald)" filter="url(#glow-soft)" opacity="0.95"/>
+        <path d="M300,300 L300,390 A90,90 0 0,1 222.1,345 Z" fill="url(#sapphire)" filter="url(#glow-soft)" opacity="0.95"/>
+        <path d="M300,300 L222.1,345 A90,90 0 0,1 222.1,255 Z" fill="url(#violet)" filter="url(#glow-soft)" opacity="0.95"/>
+        <path d="M300,300 L222.1,255 A90,90 0 0,1 300,210 Z" fill="url(#gold)" filter="url(#glow-soft)" opacity="0.95"/>
+
+        <!-- Lead lines inner -->
+        <line x1="300" y1="300" x2="300" y2="210" stroke="#1a0a00" stroke-width="3"/>
+        <line x1="300" y1="300" x2="377.9" y2="255" stroke="#1a0a00" stroke-width="3"/>
+        <line x1="300" y1="300" x2="377.9" y2="345" stroke="#1a0a00" stroke-width="3"/>
+        <line x1="300" y1="300" x2="300" y2="390" stroke="#1a0a00" stroke-width="3"/>
+        <line x1="300" y1="300" x2="222.1" y2="345" stroke="#1a0a00" stroke-width="3"/>
+        <line x1="300" y1="300" x2="222.1" y2="255" stroke="#1a0a00" stroke-width="3"/>
+
+        <!-- Center jewel -->
+        <circle cx="300" cy="300" r="30" fill="url(#gold)" filter="url(#glow-soft)" stroke="#1a0a00" stroke-width="4"/>
+        <circle cx="300" cy="300" r="18" fill="#fff8e1" filter="url(#glow-soft)" opacity="0.9"/>
+        <circle cx="300" cy="300" r="8" fill="white" opacity="0.95"/>
+
+        <!-- Outer decorative ring dots -->
+        <circle cx="300" cy="30" r="6" fill="#f9a825" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="434.7" cy="76.3" r="6" fill="#8b0000" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="540" cy="187.7" r="6" fill="#0d2b6e" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="570" cy="300" r="6" fill="#1a4a3a" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="540" cy="412.3" r="6" fill="#e65100" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="434.7" cy="523.7" r="6" fill="#4a0072" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="300" cy="570" r="6" fill="#8b0000" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="165.3" cy="523.7" r="6" fill="#0d2b6e" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="60" cy="412.3" r="6" fill="#1a4a3a" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="30" cy="300" r="6" fill="#e65100" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="60" cy="187.7" r="6" fill="#4a0072" stroke="#1a0a00" stroke-width="2"/>
+        <circle cx="165.3" cy="76.3" r="6" fill="#f9a825" stroke="#1a0a00" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Denver, Colorado · Est. 1982</p>
+      <h1 class="hero-title">Light<br/><em>Made Art</em></h1>
+      <p class="hero-sub">Handcrafted stained glass windows for homes,<br>churches, and landmark spaces</p>
+      <div class="hero-cta">
+        <a href="#commission" class="btn btn-primary">Begin Your Commission</a>
+        <a href="#gallery" class="btn btn-outline">View Gallery</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 0v20M1 13l7 7 7-7" stroke="currentColor" stroke-width="1.5"/></svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-art" aria-hidden="true">
+          <!-- Geometric art deco panel -->
+          <svg class="art-panel" viewBox="0 0 320 480" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ab1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe082"/><stop offset="100%" stop-color="#c77800"/></radialGradient>
+              <radialGradient id="ab2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#80deea"/><stop offset="100%" stop-color="#006064"/></radialGradient>
+              <radialGradient id="ab3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ef9a9a"/><stop offset="100%" stop-color="#b71c1c"/></radialGradient>
+              <radialGradient id="ab4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ce93d8"/><stop offset="100%" stop-color="#4a0072"/></radialGradient>
+            </defs>
+            <!-- Frame -->
+            <rect width="320" height="480" fill="#0d0500" rx="4"/>
+            <rect x="8" y="8" width="304" height="464" fill="none" stroke="#3d2200" stroke-width="3"/>
+            <rect x="16" y="16" width="288" height="448" fill="none" stroke="#1a0a00" stroke-width="2"/>
+
+            <!-- Top arch zone -->
+            <path d="M160,40 L40,180 L280,180 Z" fill="url(#ab1)" opacity="0.88"/>
+            <path d="M40,180 L160,40 L160,180 Z" fill="url(#ab2)" opacity="0.8"/>
+            <path d="M280,180 L160,40 L160,180 Z" fill="url(#ab3)" opacity="0.8"/>
+
+            <!-- Lead lines top -->
+            <line x1="160" y1="40" x2="40" y2="180" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="160" y1="40" x2="280" y2="180" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="40" y1="180" x2="280" y2="180" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="160" y1="40" x2="160" y2="180" stroke="#1a0a00" stroke-width="3"/>
+
+            <!-- Center diamond grid -->
+            <rect x="80" y="210" width="80" height="80" fill="url(#ab2)" transform="rotate(45 120 250)" opacity="0.85"/>
+            <rect x="150" y="210" width="80" height="80" fill="url(#ab1)" transform="rotate(45 190 250)" opacity="0.85"/>
+            <rect x="80" y="280" width="80" height="80" fill="url(#ab3)" transform="rotate(45 120 320)" opacity="0.85"/>
+            <rect x="150" y="280" width="80" height="80" fill="url(#ab4)" transform="rotate(45 190 320)" opacity="0.85"/>
+
+            <!-- Lead lines center -->
+            <line x1="160" y1="210" x2="160" y2="370" stroke="#1a0a00" stroke-width="3.5"/>
+            <line x1="80" y1="290" x2="240" y2="290" stroke="#1a0a00" stroke-width="3.5"/>
+            <line x1="80" y1="210" x2="240" y2="370" stroke="#1a0a00" stroke-width="3"/>
+            <line x1="240" y1="210" x2="80" y2="370" stroke="#1a0a00" stroke-width="3"/>
+
+            <!-- Bottom panels -->
+            <rect x="40" y="390" width="100" height="70" fill="url(#ab4)" rx="0" opacity="0.85"/>
+            <rect x="180" y="390" width="100" height="70" fill="url(#ab2)" rx="0" opacity="0.85"/>
+
+            <!-- Lead lines bottom -->
+            <line x1="40" y1="390" x2="40" y2="460" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="140" y1="390" x2="140" y2="460" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="180" y1="390" x2="180" y2="460" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="280" y1="390" x2="280" y2="460" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="40" y1="390" x2="280" y2="390" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="40" y1="460" x2="280" y2="460" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="160" y1="390" x2="160" y2="460" stroke="#1a0a00" stroke-width="3"/>
+
+            <!-- Corner jewels -->
+            <circle cx="40" cy="180" r="7" fill="#f9a825" stroke="#1a0a00" stroke-width="2"/>
+            <circle cx="280" cy="180" r="7" fill="#f9a825" stroke="#1a0a00" stroke-width="2"/>
+            <circle cx="160" cy="40" r="9" fill="white" stroke="#1a0a00" stroke-width="2" opacity="0.9"/>
+          </svg>
+        </div>
+        <div class="about-text">
+          <span class="section-eyebrow">The Craftsman</span>
+          <h2 class="section-title">Forty Years of Light</h2>
+          <p class="about-lead">Bill Lutomski has been transforming sunlight into art since 1982 — a career spanning four decades, thousands of original pieces, and a lineage that traces directly to the Prairie masters.</p>
+          <p>Trained by the great-granddaughter of Frank Lloyd Wright, Bill carries forward the organic geometry and reverence for natural light that defined an American architectural movement. From his Denver studio, he designs and fabricates every panel by hand — cutting, leading, and soldering with the same patient attention that has defined his craft since the Reagan era.</p>
+          <p>His work graces private homes, historic churches, restaurants, casinos, government buildings, libraries, and corporate campuses across Colorado and beyond. Whether a single decorative accent or a floor-to-ceiling statement wall, each piece begins the same way: with Bill at a light table, tracing lines that will one day sing with color.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Years in Practice</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1982</span>
+              <span class="stat-label">Founded</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">FLW</span>
+              <span class="stat-label">Lineage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What We Do</span>
+        <h2 class="section-title">Services</h2>
+        <p class="section-intro">From a single accent panel to a grand installation, every project receives the same meticulous craft.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs><radialGradient id="si1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe082"/><stop offset="100%" stop-color="#f57f17"/></radialGradient></defs>
+              <rect x="5" y="5" width="70" height="70" fill="#0d0500" stroke="#3d2200" stroke-width="2"/>
+              <polygon points="40,10 70,40 40,70 10,40" fill="url(#si1)" opacity="0.9"/>
+              <polygon points="40,10 55,25 40,40 25,25" fill="#80cbc4" opacity="0.85"/>
+              <polygon points="55,25 70,40 55,55 40,40" fill="#ef9a9a" opacity="0.85"/>
+              <polygon points="40,40 55,55 40,70 25,55" fill="#ce93d8" opacity="0.85"/>
+              <polygon points="25,55 40,40 25,25 10,40" fill="#80deea" opacity="0.85"/>
+              <line x1="40" y1="10" x2="70" y2="40" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="70" y1="40" x2="40" y2="70" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="40" y1="70" x2="10" y2="40" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="10" y1="40" x2="40" y2="10" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="25" y1="25" x2="55" y2="55" stroke="#1a0a00" stroke-width="2"/>
+              <line x1="55" y1="25" x2="25" y2="55" stroke="#1a0a00" stroke-width="2"/>
+              <circle cx="40" cy="40" r="5" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+          <h3>Custom Design</h3>
+          <p>Original stained glass windows designed around your vision — architectural style, color palette, subject matter, and space. Every piece is one-of-a-kind.</p>
+          <ul class="service-list">
+            <li>Residential windows &amp; doors</li>
+            <li>Art Deco &amp; geometric panels</li>
+            <li>Prairie &amp; mid-century modern</li>
+            <li>Figurative &amp; landscape designs</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs><radialGradient id="si2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#80cbc4"/><stop offset="100%" stop-color="#004d40"/></radialGradient></defs>
+              <rect x="5" y="5" width="70" height="70" fill="#0d0500" stroke="#3d2200" stroke-width="2"/>
+              <rect x="15" y="15" width="22" height="50" fill="url(#si2)" opacity="0.9"/>
+              <rect x="43" y="15" width="22" height="22" fill="#ef9a9a" opacity="0.85"/>
+              <rect x="43" y="43" width="22" height="22" fill="#ce93d8" opacity="0.85"/>
+              <!-- crack line being repaired -->
+              <line x1="15" y1="15" x2="37" y2="65" stroke="#3d2200" stroke-width="1.5" stroke-dasharray="3,2"/>
+              <line x1="20" y1="15" x2="20" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="37" y1="15" x2="37" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="15" y1="15" x2="37" y2="15" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="15" y1="40" x2="37" y2="40" stroke="#1a0a00" stroke-width="2"/>
+              <line x1="15" y1="65" x2="37" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="43" y1="15" x2="65" y2="15" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="43" y1="37" x2="65" y2="37" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="43" y1="65" x2="65" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="43" y1="15" x2="43" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="65" y1="15" x2="65" y2="65" stroke="#1a0a00" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Restoration &amp; Repair</h3>
+          <p>Expert conservation and restoration of antique and damaged stained glass. Broken panes, failed leading, sagging panels — brought back to their original brilliance.</p>
+          <ul class="service-list">
+            <li>Lead came replacement</li>
+            <li>Broken glass repair</li>
+            <li>Historic window conservation</li>
+            <li>Church &amp; chapel restoration</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs><radialGradient id="si3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ef9a9a"/><stop offset="100%" stop-color="#b71c1c"/></radialGradient></defs>
+              <rect x="5" y="5" width="70" height="70" fill="#0d0500" stroke="#3d2200" stroke-width="2"/>
+              <!-- window frame -->
+              <rect x="12" y="8" width="56" height="64" fill="none" stroke="#4a2000" stroke-width="4" rx="2"/>
+              <!-- arch top -->
+              <path d="M20,35 Q40,8 60,35" fill="url(#si3)" opacity="0.9"/>
+              <path d="M20,35 Q30,22 40,35" fill="#ffe082" opacity="0.85"/>
+              <path d="M40,35 Q50,22 60,35" fill="#80deea" opacity="0.85"/>
+              <!-- rectangular bottom panels -->
+              <rect x="20" y="35" width="18" height="30" fill="#ce93d8" opacity="0.85"/>
+              <rect x="42" y="35" width="18" height="30" fill="#80cbc4" opacity="0.85"/>
+              <!-- lead lines -->
+              <path d="M20,35 Q40,8 60,35" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="40" y1="8" x2="40" y2="65" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="20" y1="35" x2="60" y2="35" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="20" y1="35" x2="20" y2="65" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="60" y1="35" x2="60" y2="65" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="20" y1="65" x2="60" y2="65" stroke="#1a0a00" stroke-width="3"/>
+            </svg>
+          </div>
+          <h3>Installation</h3>
+          <p>Professional installation in new and existing frames. Bill handles the full process — fabrication, framing, and finish — ensuring every panel is perfectly seated and structurally sound.</p>
+          <ul class="service-list">
+            <li>New window installation</li>
+            <li>Panel re-hanging &amp; resetting</li>
+            <li>Custom framing &amp; zinc channels</li>
+            <li>Exterior protective glazing</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs><radialGradient id="si4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ce93d8"/><stop offset="100%" stop-color="#4a0072"/></radialGradient></defs>
+              <rect x="5" y="5" width="70" height="70" fill="#0d0500" stroke="#3d2200" stroke-width="2"/>
+              <!-- building facade suggestion -->
+              <rect x="10" y="20" width="60" height="45" fill="#1a0a00"/>
+              <!-- windows as stained glass panels -->
+              <rect x="14" y="24" width="14" height="20" fill="url(#si4)" opacity="0.9"/>
+              <rect x="33" y="24" width="14" height="20" fill="#ffe082" opacity="0.85"/>
+              <rect x="52" y="24" width="14" height="20" fill="#80cbc4" opacity="0.85"/>
+              <rect x="14" y="50" width="14" height="12" fill="#80deea" opacity="0.85"/>
+              <rect x="33" y="50" width="14" height="12" fill="url(#si4)" opacity="0.9"/>
+              <rect x="52" y="50" width="14" height="12" fill="#ef9a9a" opacity="0.85"/>
+              <!-- leads -->
+              <rect x="14" y="24" width="14" height="20" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="33" y="24" width="14" height="20" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="52" y="24" width="14" height="20" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="14" y="50" width="14" height="12" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="33" y="50" width="14" height="12" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="52" y="50" width="14" height="12" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- building frame -->
+              <rect x="10" y="20" width="60" height="45" fill="none" stroke="#4a2000" stroke-width="3"/>
+              <!-- roof line -->
+              <polygon points="10,20 40,8 70,20" fill="#3d2200" stroke="#1a0a00" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Commercial Projects</h3>
+          <p>Large-scale commissions for restaurants, hotels, casinos, government buildings, libraries, and corporate spaces. Experienced in complex multi-panel installations with strict deadlines.</p>
+          <ul class="service-list">
+            <li>Restaurants &amp; hospitality</li>
+            <li>Government &amp; civic buildings</li>
+            <li>Corporate lobbies &amp; atriums</li>
+            <li>Religious institutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Original Works</span>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-intro">Each panel is a unique study in geometry, color, and light — crafted entirely by hand.</p>
+      </div>
+      <div class="gallery-grid">
+
+        <!-- Panel 1: Cathedral Rose -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Cathedral Rose stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g1a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff8a80"/><stop offset="100%" stop-color="#c62828"/></radialGradient>
+                <radialGradient id="g1b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#82b1ff"/><stop offset="100%" stop-color="#1565c0"/></radialGradient>
+                <radialGradient id="g1c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff59d"/><stop offset="100%" stop-color="#f9a825"/></radialGradient>
+                <filter id="gl1"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- arch top -->
+              <path d="M30,150 Q140,20 250,150 L250,340 L30,340 Z" fill="#0d0500"/>
+              <!-- rose window in arch -->
+              <circle cx="140" cy="130" r="95" fill="#0a0300" stroke="#1a0a00" stroke-width="5"/>
+              <!-- 8 petals rose -->
+              <path d="M140,130 L140,35 A95,95 0 0,1 207,63 Z" fill="url(#g1a)" filter="url(#gl1)" opacity="0.9"/>
+              <path d="M140,130 L207,63 A95,95 0 0,1 235,130 Z" fill="url(#g1b)" opacity="0.9"/>
+              <path d="M140,130 L235,130 A95,95 0 0,1 207,197 Z" fill="url(#g1c)" opacity="0.9"/>
+              <path d="M140,130 L207,197 A95,95 0 0,1 140,225 Z" fill="url(#g1a)" opacity="0.9"/>
+              <path d="M140,130 L140,225 A95,95 0 0,1 73,197 Z" fill="url(#g1b)" opacity="0.9"/>
+              <path d="M140,130 L73,197 A95,95 0 0,1 45,130 Z" fill="url(#g1c)" opacity="0.9"/>
+              <path d="M140,130 L45,130 A95,95 0 0,1 73,63 Z" fill="url(#g1a)" opacity="0.9"/>
+              <path d="M140,130 L73,63 A95,95 0 0,1 140,35 Z" fill="url(#g1b)" opacity="0.9"/>
+              <!-- leads -->
+              <line x1="140" y1="130" x2="140" y2="35" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="207" y2="63" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="235" y2="130" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="207" y2="197" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="140" y2="225" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="73" y2="197" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="45" y2="130" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="130" x2="73" y2="63" stroke="#1a0a00" stroke-width="3.5"/>
+              <circle cx="140" cy="130" r="20" fill="url(#g1c)" filter="url(#gl1)" stroke="#1a0a00" stroke-width="3"/>
+              <circle cx="140" cy="130" r="8" fill="white" opacity="0.9"/>
+              <!-- lower lancets -->
+              <rect x="50" y="245" width="60" height="85" fill="url(#g1b)" rx="0" opacity="0.85"/>
+              <rect x="170" y="245" width="60" height="85" fill="url(#g1a)" rx="0" opacity="0.85"/>
+              <!-- leads lower -->
+              <line x1="50" y1="245" x2="50" y2="330" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="110" y1="245" x2="110" y2="330" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="170" y1="245" x2="170" y2="330" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="230" y1="245" x2="230" y2="330" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="50" y1="245" x2="230" y2="245" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="50" y1="330" x2="230" y2="330" stroke="#1a0a00" stroke-width="4"/>
+              <!-- outer frame -->
+              <path d="M30,150 Q140,20 250,150 L250,340 L30,340 Z" fill="none" stroke="#1a0a00" stroke-width="6"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Cathedral Rose</h4>
+            <p>Gothic tracery · Ruby &amp; Sapphire</p>
+          </div>
+        </div>
+
+        <!-- Panel 2: Art Deco Panel -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Art Deco stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g2a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff9c4"/><stop offset="100%" stop-color="#f57f17"/></radialGradient>
+                <radialGradient id="g2b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b3e5fc"/><stop offset="100%" stop-color="#01579b"/></radialGradient>
+                <radialGradient id="g2c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e1bee7"/><stop offset="100%" stop-color="#6a1b9a"/></radialGradient>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Art Deco fan top -->
+              <path d="M140,180 L40,180 A100,100 0 0,1 140,80 Z" fill="url(#g2a)" opacity="0.9"/>
+              <path d="M140,180 L140,80 A100,100 0 0,1 240,180 Z" fill="url(#g2b)" opacity="0.9"/>
+              <!-- Fan ribs -->
+              <line x1="140" y1="180" x2="40" y2="180" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="180" x2="240" y2="180" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="180" x2="140" y2="80" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="180" x2="75" y2="105" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="180" x2="205" y2="105" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="180" x2="58" y2="140" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="140" y1="180" x2="222" y2="140" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Arc lines -->
+              <path d="M65,180 A75,75 0 0,1 215,180" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <path d="M90,180 A50,50 0 0,1 190,180" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Center vertical band -->
+              <rect x="118" y="180" width="44" height="160" fill="url(#g2a)" opacity="0.85"/>
+              <!-- Side panels -->
+              <rect x="30" y="180" width="88" height="72" fill="url(#g2c)" opacity="0.85"/>
+              <rect x="162" y="180" width="88" height="72" fill="url(#g2c)" opacity="0.85"/>
+              <rect x="30" y="268" width="88" height="72" fill="url(#g2b)" opacity="0.85"/>
+              <rect x="162" y="268" width="88" height="72" fill="url(#g2b)" opacity="0.85"/>
+              <!-- leads grid -->
+              <line x1="118" y1="180" x2="118" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="162" y1="180" x2="162" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="30" y1="252" x2="280" y2="252" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="30" y1="268" x2="280" y2="268" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="30" y1="180" x2="30" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="250" y1="180" x2="250" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="30" y1="340" x2="250" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <!-- outer arc -->
+              <path d="M40,180 A100,100 0 0,1 240,180" fill="none" stroke="#1a0a00" stroke-width="5"/>
+              <line x1="40" y1="180" x2="40" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="240" y1="180" x2="240" y2="340" stroke="#1a0a00" stroke-width="4"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Art Deco Panel</h4>
+            <p>Fan tracery · Amber &amp; Violet</p>
+          </div>
+        </div>
+
+        <!-- Panel 3: Prairie Geometric -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Prairie Geometric stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g3a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a5d6a7"/><stop offset="100%" stop-color="#1b5e20"/></radialGradient>
+                <radialGradient id="g3b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff9c4"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+                <radialGradient id="g3c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b3e5fc"/><stop offset="100%" stop-color="#0277bd"/></radialGradient>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Prairie horizontal bands -->
+              <rect x="20" y="20" width="240" height="50" fill="url(#g3b)" opacity="0.85"/>
+              <rect x="20" y="80" width="240" height="8" fill="url(#g3a)" opacity="0.9"/>
+              <!-- Main grid -->
+              <rect x="20" y="100" width="55" height="100" fill="url(#g3a)" opacity="0.85"/>
+              <rect x="83" y="100" width="114" height="100" fill="url(#g3b)" opacity="0.85"/>
+              <rect x="205" y="100" width="55" height="100" fill="url(#g3a)" opacity="0.85"/>
+              <!-- Accent cross in center -->
+              <rect x="125" y="108" width="30" height="84" fill="url(#g3c)" opacity="0.9"/>
+              <rect x="91" y="132" width="98" height="32" fill="url(#g3c)" opacity="0.9"/>
+              <!-- Lower bands -->
+              <rect x="20" y="208" width="240" height="8" fill="url(#g3a)" opacity="0.9"/>
+              <rect x="20" y="225" width="55" height="115" fill="url(#g3c)" opacity="0.85"/>
+              <rect x="83" y="225" width="114" height="115" fill="url(#g3a)" opacity="0.85"/>
+              <rect x="205" y="225" width="55" height="115" fill="url(#g3c)" opacity="0.85"/>
+              <!-- Thin accent bar -->
+              <rect x="20" y="290" width="240" height="8" fill="url(#g3b)" opacity="0.9"/>
+              <!-- Lead lines -->
+              <rect x="20" y="20" width="240" height="50" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <rect x="20" y="80" width="240" height="8" fill="none" stroke="#1a0a00" stroke-width="2"/>
+              <line x1="75" y1="100" x2="75" y2="208" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="205" y1="100" x2="205" y2="208" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="100" x2="260" y2="100" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="208" x2="260" y2="208" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="75" y1="225" x2="75" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="205" y1="225" x2="205" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="225" x2="260" y2="225" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="290" x2="260" y2="290" stroke="#1a0a00" stroke-width="2"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="20" x2="20" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="260" y1="20" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <!-- Cross leads -->
+              <rect x="125" y="108" width="30" height="84" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <rect x="91" y="132" width="98" height="32" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Prairie Geometric</h4>
+            <p>FLW-inspired · Emerald &amp; Amber</p>
+          </div>
+        </div>
+
+        <!-- Panel 4: Midnight Iris -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Midnight Iris stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g4a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ea80fc"/><stop offset="100%" stop-color="#4a148c"/></radialGradient>
+                <radialGradient id="g4b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#40c4ff"/><stop offset="100%" stop-color="#01579b"/></radialGradient>
+                <radialGradient id="g4c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ccff90"/><stop offset="100%" stop-color="#1b5e20"/></radialGradient>
+                <filter id="gl4"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Background sky panels -->
+              <rect x="20" y="20" width="112" height="200" fill="url(#g4b)" opacity="0.7"/>
+              <rect x="148" y="20" width="112" height="200" fill="url(#g4b)" opacity="0.7"/>
+              <!-- Iris petals -->
+              <!-- upper petals -->
+              <path d="M140,220 C100,180 80,120 110,60 C120,40 130,35 140,35 C150,35 160,40 170,60 C200,120 180,180 140,220 Z" fill="url(#g4a)" filter="url(#gl4)" opacity="0.95"/>
+              <!-- side petals -->
+              <path d="M140,220 C100,200 50,210 30,180 C15,155 30,120 60,115 C90,110 120,150 140,220 Z" fill="url(#g4a)" opacity="0.85"/>
+              <path d="M140,220 C180,200 230,210 250,180 C265,155 250,120 220,115 C190,110 160,150 140,220 Z" fill="url(#g4a)" opacity="0.85"/>
+              <!-- Stem -->
+              <line x1="140" y1="220" x2="140" y2="340" stroke="#1b5e20" stroke-width="8"/>
+              <!-- Leaves -->
+              <path d="M140,280 C110,265 75,240 70,210 C68,195 78,190 90,200 C110,215 130,250 140,280 Z" fill="url(#g4c)" opacity="0.9"/>
+              <path d="M140,310 C170,295 205,270 210,240 C212,225 202,220 190,230 C170,245 150,278 140,310 Z" fill="url(#g4c)" opacity="0.9"/>
+              <!-- Petal leads -->
+              <path d="M140,220 C100,180 80,120 110,60 C120,40 130,35 140,35 C150,35 160,40 170,60 C200,120 180,180 140,220 Z" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <path d="M140,220 C100,200 50,210 30,180 C15,155 30,120 60,115 C90,110 120,150 140,220 Z" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <path d="M140,220 C180,200 230,210 250,180 C265,155 250,120 220,115 C190,110 160,150 140,220 Z" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <!-- Center vein -->
+              <line x1="140" y1="35" x2="140" y2="220" stroke="#1a0a00" stroke-width="2.5" stroke-dasharray="6,3"/>
+              <!-- Leaf leads -->
+              <path d="M140,280 C110,265 75,240 70,210 C68,195 78,190 90,200 C110,215 130,250 140,280 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <path d="M140,310 C170,295 205,270 210,240 C212,225 202,220 190,230 C170,245 150,278 140,310 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <!-- Border panels -->
+              <line x1="20" y1="20" x2="20" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="260" y1="20" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="20" x2="260" y2="20" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="132" y1="20" x2="132" y2="340" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="148" y1="20" x2="148" y2="340" stroke="#1a0a00" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Midnight Iris</h4>
+            <p>Botanical · Violet &amp; Cobalt</p>
+          </div>
+        </div>
+
+        <!-- Panel 5: Sunburst -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Sunburst stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g5a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffff8d"/><stop offset="100%" stop-color="#ff6f00"/></radialGradient>
+                <radialGradient id="g5b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff8a65"/><stop offset="100%" stop-color="#bf360c"/></radialGradient>
+                <radialGradient id="g5c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffcc02"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+                <radialGradient id="g5bg" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#1a237e"/><stop offset="100%" stop-color="#000051"/></radialGradient>
+                <filter id="gl5"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="url(#g5bg)"/>
+              <!-- Horizon -->
+              <rect x="20" y="220" width="240" height="120" fill="#0d0500" opacity="0.6"/>
+              <!-- Sunburst rays -->
+              <path d="M140,200 L20,20 L60,20 Z" fill="url(#g5a)" opacity="0.7"/>
+              <path d="M140,200 L60,20 L100,20 Z" fill="url(#g5b)" opacity="0.75"/>
+              <path d="M140,200 L100,20 L140,20 Z" fill="url(#g5c)" filter="url(#gl5)" opacity="0.9"/>
+              <path d="M140,200 L140,20 L180,20 Z" fill="url(#g5a)" filter="url(#gl5)" opacity="0.9"/>
+              <path d="M140,200 L180,20 L220,20 Z" fill="url(#g5b)" opacity="0.75"/>
+              <path d="M140,200 L220,20 L260,20 Z" fill="url(#g5a)" opacity="0.7"/>
+              <path d="M140,200 L20,80 L20,120 Z" fill="url(#g5c)" opacity="0.7"/>
+              <path d="M140,200 L20,120 L20,160 Z" fill="url(#g5a)" opacity="0.7"/>
+              <path d="M140,200 L20,160 L20,200 Z" fill="url(#g5b)" opacity="0.7"/>
+              <path d="M140,200 L260,80 L260,120 Z" fill="url(#g5c)" opacity="0.7"/>
+              <path d="M140,200 L260,120 L260,160 Z" fill="url(#g5a)" opacity="0.7"/>
+              <path d="M140,200 L260,160 L260,200 Z" fill="url(#g5b)" opacity="0.7"/>
+              <!-- Sun circle -->
+              <circle cx="140" cy="200" r="50" fill="url(#g5c)" filter="url(#gl5)" opacity="0.95"/>
+              <circle cx="140" cy="200" r="30" fill="url(#g5a)" filter="url(#gl5)" opacity="0.95"/>
+              <circle cx="140" cy="200" r="14" fill="#fffde7" opacity="0.98"/>
+              <!-- Ray leads -->
+              <line x1="140" y1="200" x2="20" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="60" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="100" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="140" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="180" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="220" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="260" y2="20" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="200" x2="20" y2="80" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="140" y1="200" x2="20" y2="160" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="140" y1="200" x2="260" y2="80" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="140" y1="200" x2="260" y2="160" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Arc rings -->
+              <circle cx="140" cy="200" r="50" fill="none" stroke="#1a0a00" stroke-width="4"/>
+              <circle cx="140" cy="200" r="80" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <circle cx="140" cy="200" r="112" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Bottom panels -->
+              <line x1="20" y1="220" x2="260" y2="220" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="20" x2="20" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="260" y1="20" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="20" x2="260" y2="20" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="80" y1="220" x2="80" y2="340" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="140" y1="220" x2="140" y2="340" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="200" y1="220" x2="200" y2="340" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="20" y1="280" x2="260" y2="280" stroke="#1a0a00" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Colorado Sunburst</h4>
+            <p>Radial · Amber &amp; Cobalt</p>
+          </div>
+        </div>
+
+        <!-- Panel 6: Geometric Mandala -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Geometric Mandala stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g6a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#80cbc4"/><stop offset="100%" stop-color="#004d40"/></radialGradient>
+                <radialGradient id="g6b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#f48fb1"/><stop offset="100%" stop-color="#880e4f"/></radialGradient>
+                <radialGradient id="g6c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe082"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+                <filter id="gl6"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Corner panels -->
+              <rect x="20" y="20" width="88" height="88" fill="url(#g6b)" opacity="0.8"/>
+              <rect x="172" y="20" width="88" height="88" fill="url(#g6a)" opacity="0.8"/>
+              <rect x="20" y="252" width="88" height="88" fill="url(#g6a)" opacity="0.8"/>
+              <rect x="172" y="252" width="88" height="88" fill="url(#g6b)" opacity="0.8"/>
+              <!-- Middle side panels -->
+              <rect x="20" y="120" width="88" height="120" fill="url(#g6c)" opacity="0.8"/>
+              <rect x="172" y="120" width="88" height="120" fill="url(#g6c)" opacity="0.8"/>
+              <!-- Center square rotated -->
+              <rect x="100" y="100" width="80" height="80" fill="url(#g6b)" transform="rotate(45 140 140)" opacity="0.9"/>
+              <rect x="100" y="220" width="80" height="80" fill="url(#g6a)" transform="rotate(45 140 260)" opacity="0.9"/>
+              <!-- Center mandala -->
+              <circle cx="140" cy="180" r="55" fill="url(#g6a)" filter="url(#gl6)" opacity="0.9"/>
+              <circle cx="140" cy="180" r="40" fill="url(#g6b)" opacity="0.9"/>
+              <circle cx="140" cy="180" r="25" fill="url(#g6c)" filter="url(#gl6)" opacity="0.95"/>
+              <circle cx="140" cy="180" r="12" fill="#fffde7" opacity="0.95"/>
+              <!-- Mandala lines -->
+              <line x1="140" y1="125" x2="140" y2="235" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="85" y1="180" x2="195" y2="180" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="101" y1="141" x2="179" y2="219" stroke="#1a0a00" stroke-width="2"/>
+              <line x1="179" y1="141" x2="101" y2="219" stroke="#1a0a00" stroke-width="2"/>
+              <!-- Concentric leads -->
+              <circle cx="140" cy="180" r="55" fill="none" stroke="#1a0a00" stroke-width="4"/>
+              <circle cx="140" cy="180" r="40" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <circle cx="140" cy="180" r="25" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <!-- Grid leads -->
+              <line x1="20" y1="108" x2="260" y2="108" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="120" x2="260" y2="120" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="240" x2="260" y2="240" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="252" x2="260" y2="252" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="108" y1="20" x2="108" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="120" y1="20" x2="120" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="160" y1="20" x2="160" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="172" y1="20" x2="172" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <!-- Outer frame -->
+              <line x1="20" y1="20" x2="20" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="260" y1="20" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="20" x2="260" y2="20" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Geometric Mandala</h4>
+            <p>Concentric · Teal &amp; Rose</p>
+          </div>
+        </div>
+
+        <!-- Panel 7: Venetian Lantern -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Venetian Lantern stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g7a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffcc80"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+                <radialGradient id="g7b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b39ddb"/><stop offset="100%" stop-color="#4527a0"/></radialGradient>
+                <radialGradient id="g7c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#80cbc4"/><stop offset="100%" stop-color="#006064"/></radialGradient>
+                <filter id="gl7"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Diamond lattice -->
+              <g opacity="0.82">
+                <polygon points="140,20 195,90 140,160 85,90" fill="url(#g7a)"/>
+                <polygon points="85,90 140,160 85,230 30,160" fill="url(#g7b)"/>
+                <polygon points="140,160 195,90 250,160 195,230" fill="url(#g7c)"/>
+                <polygon points="85,230 140,160 195,230 140,300" fill="url(#g7a)"/>
+                <polygon points="30,160 85,230 30,300 20,230" fill="url(#g7c)"/>
+                <polygon points="250,160 195,230 250,300 260,230" fill="url(#g7b)"/>
+              </g>
+              <!-- Central glow -->
+              <polygon points="140,90 175,140 140,190 105,140" fill="url(#g7a)" filter="url(#gl7)" opacity="0.95"/>
+              <circle cx="140" cy="140" r="22" fill="#fffde7" filter="url(#gl7)" opacity="0.9"/>
+              <!-- Diamond leads -->
+              <polygon points="140,20 195,90 140,160 85,90" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <polygon points="85,90 140,160 85,230 30,160" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <polygon points="140,160 195,90 250,160 195,230" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <polygon points="85,230 140,160 195,230 140,300" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <polygon points="30,160 85,230 30,300 20,230" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <polygon points="250,160 195,230 250,300 260,230" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <polygon points="140,90 175,140 140,190 105,140" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Bottom row -->
+              <rect x="20" y="300" width="80" height="45" fill="url(#g7b)" opacity="0.85"/>
+              <rect x="100" y="300" width="80" height="45" fill="url(#g7a)" opacity="0.85"/>
+              <rect x="180" y="300" width="80" height="45" fill="url(#g7c)" opacity="0.85"/>
+              <line x1="20" y1="300" x2="260" y2="300" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="345" x2="260" y2="345" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="100" y1="300" x2="100" y2="345" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="180" y1="300" x2="180" y2="345" stroke="#1a0a00" stroke-width="3"/>
+              <!-- Outer frame -->
+              <rect x="18" y="18" width="244" height="326" fill="none" stroke="#1a0a00" stroke-width="5"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Venetian Lantern</h4>
+            <p>Diamond lattice · Amber &amp; Amethyst</p>
+          </div>
+        </div>
+
+        <!-- Panel 8: Mountain Chapel -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Mountain Chapel stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g8sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a237e"/><stop offset="100%" stop-color="#283593"/></linearGradient>
+                <radialGradient id="g8a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe082"/><stop offset="100%" stop-color="#f57f17"/></radialGradient>
+                <radialGradient id="g8b" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ef9a9a"/><stop offset="100%" stop-color="#b71c1c"/></radialGradient>
+                <radialGradient id="g8c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a5d6a7"/><stop offset="100%" stop-color="#1b5e20"/></radialGradient>
+                <filter id="gl8"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="#0a0300"/>
+              <!-- Sky background -->
+              <rect x="20" y="20" width="240" height="240" fill="url(#g8sky)" opacity="0.9"/>
+              <!-- Mountains silhouette -->
+              <polygon points="20,220 80,120 140,180 200,100 260,160 260,260 20,260" fill="#0d0500" opacity="0.8"/>
+              <!-- Star/light burst -->
+              <circle cx="140" cy="80" r="35" fill="url(#g8a)" filter="url(#gl8)" opacity="0.9"/>
+              <circle cx="140" cy="80" r="20" fill="#fffde7" filter="url(#gl8)" opacity="0.95"/>
+              <!-- Mountain color panels -->
+              <polygon points="80,120 110,175 50,175" fill="url(#g8b)" opacity="0.7"/>
+              <polygon points="200,100 230,155 170,155" fill="url(#g8c)" opacity="0.7"/>
+              <!-- Bottom panels -->
+              <rect x="20" y="260" width="72" height="80" fill="url(#g8b)" opacity="0.85"/>
+              <rect x="104" y="260" width="72" height="80" fill="url(#g8a)" opacity="0.85"/>
+              <rect x="188" y="260" width="72" height="80" fill="url(#g8c)" opacity="0.85"/>
+              <!-- Lead lines -->
+              <polygon points="20,220 80,120 140,180 200,100 260,160 260,260 20,260" fill="none" stroke="#1a0a00" stroke-width="4"/>
+              <circle cx="140" cy="80" r="35" fill="none" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="20" x2="140" y2="115" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="105" y1="45" x2="175" y2="115" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="175" y1="45" x2="105" y2="115" stroke="#1a0a00" stroke-width="2.5"/>
+              <line x1="20" y1="260" x2="260" y2="260" stroke="#1a0a00" stroke-width="4"/>
+              <line x1="92" y1="260" x2="92" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="104" y1="260" x2="104" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="176" y1="260" x2="176" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="188" y1="260" x2="188" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <!-- outer frame -->
+              <rect x="20" y="20" width="240" height="320" fill="none" stroke="#1a0a00" stroke-width="5"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Mountain Chapel</h4>
+            <p>Scenic · Cobalt &amp; Crimson</p>
+          </div>
+        </div>
+
+        <!-- Panel 9: Harvest Moon -->
+        <div class="gallery-item">
+          <div class="gallery-panel" aria-label="Harvest Moon stained glass panel">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g9a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffab40"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+                <radialGradient id="g9bg" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#4a148c"/><stop offset="100%" stop-color="#1a0050"/></radialGradient>
+                <radialGradient id="g9c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ef9a9a"/><stop offset="100%" stop-color="#880e4f"/></radialGradient>
+                <filter id="gl9"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="280" height="360" fill="url(#g9bg)"/>
+              <!-- Moon glow -->
+              <circle cx="140" cy="140" r="80" fill="url(#g9a)" filter="url(#gl9)" opacity="0.5"/>
+              <!-- Moon -->
+              <circle cx="140" cy="140" r="60" fill="url(#g9a)" filter="url(#gl9)" opacity="0.95"/>
+              <circle cx="140" cy="140" r="45" fill="#ffe0b2" opacity="0.9"/>
+              <circle cx="140" cy="140" r="28" fill="#fff8e1" opacity="0.95"/>
+              <!-- Moon craters -->
+              <circle cx="120" cy="125" r="8" fill="#ffe082" opacity="0.7" stroke="#e65100" stroke-width="1.5"/>
+              <circle cx="155" cy="152" r="5" fill="#ffe082" opacity="0.7" stroke="#e65100" stroke-width="1.5"/>
+              <circle cx="130" cy="158" r="4" fill="#ffe082" opacity="0.7" stroke="#e65100" stroke-width="1.5"/>
+              <!-- Moon leads -->
+              <circle cx="140" cy="140" r="60" fill="none" stroke="#1a0a00" stroke-width="4"/>
+              <circle cx="140" cy="140" r="45" fill="none" stroke="#1a0a00" stroke-width="2.5"/>
+              <!-- Surrounding mosaic -->
+              <path d="M20,20 L140,20 L80,80 Z" fill="url(#g9c)" opacity="0.8"/>
+              <path d="M140,20 L260,20 L200,80 Z" fill="url(#g9a)" opacity="0.8"/>
+              <path d="M20,20 L80,80 L20,140 Z" fill="url(#g9a)" opacity="0.75"/>
+              <path d="M260,20 L200,80 L260,140 Z" fill="url(#g9c)" opacity="0.75"/>
+              <!-- Lower mosaic -->
+              <path d="M20,260 L80,200 L140,260 Z" fill="url(#g9a)" opacity="0.8"/>
+              <path d="M140,260 L200,200 L260,260 Z" fill="url(#g9c)" opacity="0.8"/>
+              <rect x="20" y="260" width="108" height="80" fill="url(#g9c)" opacity="0.75"/>
+              <rect x="152" y="260" width="108" height="80" fill="url(#g9a)" opacity="0.75"/>
+              <!-- Mosaic leads -->
+              <path d="M20,20 L140,20 L80,80 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <path d="M140,20 L260,20 L200,80 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <path d="M20,20 L80,80 L20,140 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <path d="M260,20 L200,80 L260,140 Z" fill="none" stroke="#1a0a00" stroke-width="3"/>
+              <line x1="20" y1="260" x2="260" y2="260" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="140" y1="260" x2="140" y2="340" stroke="#1a0a00" stroke-width="3.5"/>
+              <line x1="20" y1="340" x2="260" y2="340" stroke="#1a0a00" stroke-width="4"/>
+              <!-- Outer frame -->
+              <rect x="20" y="20" width="240" height="320" fill="none" stroke="#1a0a00" stroke-width="5"/>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Harvest Moon</h4>
+            <p>Celestial · Amber &amp; Magenta</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMISSION -->
+  <section id="commission" class="commission section section-dark">
+    <div class="container">
+      <div class="commission-grid">
+        <div class="commission-text">
+          <span class="section-eyebrow">Start a Project</span>
+          <h2 class="section-title">Commission a<br><em>Custom Piece</em></h2>
+          <p>Every window begins with a conversation. Tell Bill about your space, your vision, and the light you want to live with — and he'll design something that could only exist in your home, your church, or your building.</p>
+          <p>Commissions are accepted for residential and commercial projects of all scales. Lead times vary by complexity; contact Bill to discuss your timeline.</p>
+          <div class="commission-steps">
+            <div class="step">
+              <span class="step-num">01</span>
+              <div>
+                <strong>Consultation</strong>
+                <p>Discuss your vision, space, and budget. Bill visits the site when possible.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">02</span>
+              <div>
+                <strong>Design</strong>
+                <p>Full-scale cartoon (drawing) created for your approval before any glass is cut.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">03</span>
+              <div>
+                <strong>Fabrication</strong>
+                <p>Glass selected, cut, leaded, and soldered by hand in the Denver studio.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">04</span>
+              <div>
+                <strong>Installation</strong>
+                <p>Professional installation and final glazing compound to weatherproof and stabilize.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="commission-form-wrap">
+          <form class="commission-form" action="mailto:bill@lutomskiglass.com" method="get" enctype="text/plain">
+            <h3>Tell us about your project</h3>
+            <div class="form-row">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(303) 555-0100" />
+            </div>
+            <div class="form-row">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project-type">
+                <option value="">Select a type…</option>
+                <option>Residential window</option>
+                <option>Door panel</option>
+                <option>Church / chapel</option>
+                <option>Commercial installation</option>
+                <option>Restoration / repair</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Describe your vision</label>
+              <textarea id="message" name="body" rows="5" placeholder="Tell Bill about the space, the mood, the colors, anything that inspires you…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+            <p class="form-note">Or call directly: <a href="tel:+13035220849">(303) 522-0849</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Find Us</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4C13.37 4 8 9.37 8 16c0 9 12 22 12 22s12-13 12-22c0-6.63-5.37-12-12-12zm0 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="#c7a84a"/>
+            </svg>
+          </div>
+          <h4>Studio Address</h4>
+          <p>Lutomski Stained Glass<br>Denver, CO 80210</p>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 6a2 2 0 0 0-2 2v3.5c0 12.4 10.1 22.5 22.5 22.5H32a2 2 0 0 0 2-2v-4.5a1 1 0 0 0-.6-.9l-6-2.5a1 1 0 0 0-1.1.2l-2.5 2.5a15.5 15.5 0 0 1-7.6-7.6l2.5-2.5a1 1 0 0 0 .2-1.1L16.9 8.6A1 1 0 0 0 16 8H8z" fill="#c7a84a"/>
+            </svg>
+          </div>
+          <h4>Phone</h4>
+          <p><a href="tel:+13035220849">(303) 522-0849</a></p>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="32" height="24" rx="2" stroke="#c7a84a" stroke-width="2" fill="none"/>
+              <path d="M4 10l16 12L36 10" stroke="#c7a84a" stroke-width="2"/>
+            </svg>
+          </div>
+          <h4>Email</h4>
+          <p><a href="mailto:bill@lutomskiglass.com">bill@lutomskiglass.com</a></p>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="14" stroke="#c7a84a" stroke-width="2"/>
+              <path d="M20 10v10l6 4" stroke="#c7a84a" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Studio Hours</h4>
+          <p>Monday – Friday<br>10:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+
+      <div class="contact-lineage">
+        <div class="lineage-panel" aria-hidden="true">
+          <!-- Small decorative stained glass strip -->
+          <svg viewBox="0 0 600 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="ls1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe082"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+              <radialGradient id="ls2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ef9a9a"/><stop offset="100%" stop-color="#c62828"/></radialGradient>
+              <radialGradient id="ls3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#80cbc4"/><stop offset="100%" stop-color="#004d40"/></radialGradient>
+              <radialGradient id="ls4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b39ddb"/><stop offset="100%" stop-color="#4527a0"/></radialGradient>
+              <radialGradient id="ls5" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff59d"/><stop offset="100%" stop-color="#f9a825"/></radialGradient>
+            </defs>
+            <rect width="600" height="60" fill="#0a0300"/>
+            <rect x="0" y="0" width="120" height="60" fill="url(#ls1)" opacity="0.85"/>
+            <rect x="120" y="0" width="120" height="60" fill="url(#ls2)" opacity="0.85"/>
+            <rect x="240" y="0" width="120" height="60" fill="url(#ls3)" opacity="0.85"/>
+            <rect x="360" y="0" width="120" height="60" fill="url(#ls4)" opacity="0.85"/>
+            <rect x="480" y="0" width="120" height="60" fill="url(#ls5)" opacity="0.85"/>
+            <line x1="120" y1="0" x2="120" y2="60" stroke="#1a0a00" stroke-width="5"/>
+            <line x1="240" y1="0" x2="240" y2="60" stroke="#1a0a00" stroke-width="5"/>
+            <line x1="360" y1="0" x2="360" y2="60" stroke="#1a0a00" stroke-width="5"/>
+            <line x1="480" y1="0" x2="480" y2="60" stroke="#1a0a00" stroke-width="5"/>
+            <line x1="0" y1="0" x2="600" y2="0" stroke="#1a0a00" stroke-width="4"/>
+            <line x1="0" y1="60" x2="600" y2="60" stroke="#1a0a00" stroke-width="4"/>
+          </svg>
+        </div>
+        <p class="lineage-text">Trained by the great-granddaughter of Frank Lloyd Wright · Denver, Colorado · In practice since 1982</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Lutomski Stained Glass</p>
+        <p class="footer-sub">Denver, Colorado &bull; Est. 1982</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#commission">Commission</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Lutomski Stained Glass. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
